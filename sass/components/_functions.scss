@@ -1,0 +1,28 @@
+.functions-list {
+    display: flex;
+    grid-gap: 30px;
+}
+
+/* напівпрозорий нижній борт з описом функцій */
+.function__item {
+    position: relative;
+}
+
+.function__descr {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--hero-text-color);
+
+    background-color: rgba(47, 48, 58, 0.8);
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    display: block;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+}

@@ -1,0 +1,30 @@
+.benefits {
+    padding-bottom: 0;
+}
+
+.benefits__list {
+    display: flex;
+    grid-gap: 30px;
+}
+
+.benefit__item {
+    width: 270px;
+}
+
+.benefit__icon {
+    display: block;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    fill: currentColor;
+}
+
+.benefit__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--title-text-colour);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
