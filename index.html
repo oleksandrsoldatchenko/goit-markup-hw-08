@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="header__container container">
             <nav class="header__nav">
                 <div class="nav__container">
@@ -35,9 +35,9 @@
                 </a>
             </div>
         </div>
-    </header>
+    </header> -->
     <main>
-        <section class="hero hero__overlay">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Ефективні рішення для<br>вашого бізнесу</h1>
                 <div class="hero__btn">
@@ -47,33 +47,41 @@
         </section>
         <section class="section benefits">
             <div class="container benefits__container">
-                <!-- <h2>Переваги компанії</h2> -->
+                <h2 class="visually-hidden">Переваги компанії</h2>
                 <ul class="benefits__list list">
                     <li class="benefit__item">
-                        <svg class="benefit__icon" width="270" height="120">
-                            <use href="./images/symbol-defs.svg#benefit-antenna"></use>
-                        </svg>
+                        <div class="benefit__icon">
+                            <svg width="70" height="70">
+                                <use href="./images/symbol-defs.svg#benefit-antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="benefit__title">увага до деталей</h3>
                         <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
                     <li class="benefit__item">
-                        <svg class="benefit__icon" width="270" height="120">
-                            <use href="./images/symbol-defs.svg#benefit-clock"></use>
-                        </svg>
+                        <div class="benefit__icon">
+                            <svg width="70" height="70">
+                                <use href="./images/symbol-defs.svg#benefit-clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="benefit__title">пунктуальність</h3>
                         <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
                     <li class="benefit__item">
-                        <svg class="benefit__icon" width="270" height="120">
-                            <use href="./images/symbol-defs.svg#benefit-diagram"></use>
-                        </svg>
+                        <div class="benefit__icon">
+                            <svg width="70" height="70">
+                                <use href="./images/symbol-defs.svg#benefit-diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="benefit__title">планування</h3>
                         <p>Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
                     <li class="benefit__item">
-                        <svg class="benefit__icon" width="270" height="120">
-                            <use href="./images/symbol-defs.svg#benefit-astronaut"></use>
-                        </svg>
+                        <div class="benefit__icon">
+                            <svg width="70" height="70">
+                                <use href="./images/symbol-defs.svg#benefit-astronaut"></use>
+                            </svg>
+                        </div>
                         <h3 class="benefit__title">сучасні технології</h3>
                         <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
@@ -304,7 +312,7 @@
             </div>
         </section>
     </main>
-    <footer class="head-footer">
+    <!-- <footer class="head-footer">
         <div class="container footer">
             <div>
                 <a class="logo-footer" href="./index.html">Web<span class="logo-accent-footer">Studio</span></a>
@@ -353,9 +361,6 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- ДЗ 6 -->
-            <!-- Форма підписки на розсилку -->
             <form class="footer-subscribe">
                 <div class="footer-subscribe-conrainer">
                     <div class="footer-subscribe-label">
@@ -369,11 +374,8 @@
                     </button>
                 </div>
             </form>
-            <!-- Кінець форми підписки на розсилку -->
-            <!-- ДЗ 6 -->
-
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
@@ -383,11 +385,8 @@
                     <use href="./images/modal/sprite-modal.svg#close-btn"></use>
                 </svg>
             </button>
-
-            <!-- ДЗ 6 -->
-            <!-- Форма в модальному вікні -->
-            <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
             <form class="modal-main-form" autocomplete="off">
+                <span class="modal-form-title">Залиште свої дані, ми вам передзвонимо</span>
                 <div class="input-area">
                     <label class="form-label" for="name">Ім'я
                         <input class="form-input" name="name" type="text" id="name" required minlength="3" maxlength="20" >
@@ -413,9 +412,9 @@
                     </label>
                 </div>
                 <div class="input-area">
-                    <label class="form-label" for="comment">Коментар
+                    <label class="form-label" for="comment">Коментар</label>
                     <textarea class="form-text-area" id="comment" placeholder="Введіть текст"></textarea>
-                </label>
+                
                 </div>
                 <div class="accept">
                     
@@ -436,16 +435,12 @@
                         </label>
                     
                 </div>
-                <button class="btn__item" type="submit">Відправити</button>
+                <button class="form__btn" type="submit">Відправити</button>
             </form>
-            <!-- Кінець форми в модальному вікні -->
-            <!-- ДЗ 6 -->
-
         </div>
     </div>
     <!-- Кінець модального вікна -->
 
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

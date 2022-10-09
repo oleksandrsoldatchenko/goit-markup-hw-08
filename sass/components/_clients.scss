@@ -1,6 +1,9 @@
 .client-list {
     display: flex;
     grid-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .client-button {
