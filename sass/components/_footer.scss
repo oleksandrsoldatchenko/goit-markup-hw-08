@@ -1,18 +1,42 @@
-.head-footer {
+.head__footer {
     background-color: var(--footer-brt-color);
     padding: 60px 0;
 }
 
 .footer {
-    display: flex;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
-.logo-footer {
+.tablet__container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer__adress {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        text-align: center;
+        margin-right: 165px;
+        margin-left: 76px;
+        margin-bottom: 60px;
+    }
+  }
+
+.logo__footer {
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     color: var(--accent-text-color);
 }
 
@@ -22,6 +46,14 @@
 
 .logo-accent-footer {
     color: var(--hero-text-color);
+}
+
+.footer__contacts {
+    margin-top: 20px;
+
+    @media screen and (max-width: 1199px) {
+          margin-bottom: 60px;
+        }
 }
 
 .footer-adress-cont {
@@ -65,20 +97,31 @@
 }
 
 .connect {
-    margin-top: 12px;
-    margin-left: 94px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
 
-.title-connect {
+.title__connect {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--hero-text-color);
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .connect-logo {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
 }
 
 .sn-button {
@@ -112,24 +155,32 @@
 }
 
 /* Форма підписки на розсилку */
-.footer-subscribe {
-    margin-left: auto;
-}
+// .footer-subscribe {
+//     margin-left: auto;
+// }
 
 .footer-subscribe-conrainer {
-    display: flex;
-    align-items: end;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto;
+    }
+    
 }
 
 .footer-subscribe-label {
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
 }
 
 .title-subscribe {
     display: block;
-    margin-top: 12px;
     margin-bottom: 20px;
+    text-align: center;
 
     font-weight: 700;
     font-size: 14px;
@@ -137,10 +188,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--hero-text-color);
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .imput-email {
-    width: 358px;
+    width: 100%;
     height: 50px;
 
     padding-left: 16px;
@@ -156,6 +211,16 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+    }
+
+      @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }
 
 .footer-btn {
@@ -167,7 +232,9 @@
     width: 200px;
     height: 50px;
 
-    margin-left: 12px;
+    // margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
 
     font-weight: 700;
     font-size: 16px;
@@ -193,6 +260,10 @@
             background-color: var(--secondary-bgr-color);
             fill: var(--accent-text-color);
             color: var(--accent-text-color);
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 12px;
         }
 }
 /* Кінець форми підписки на розсилку */
