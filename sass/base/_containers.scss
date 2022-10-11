@@ -35,6 +35,13 @@
     }
 }
 
+.flex__container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
 .section-title {
     font-weight: 700;
     font-size: 28px;
