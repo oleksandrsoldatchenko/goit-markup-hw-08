@@ -1,5 +1,8 @@
 .hero {
-    padding: 118px 0;
+    // padding: 118px 0;
+    display: flex;
+    align-items: center;
+    
     height: 400px;
     max-width: 1600px;
     margin-left: auto;
@@ -64,7 +67,7 @@
     margin-right: auto;
     max-width: 250px;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 26px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
@@ -95,7 +98,7 @@
     display: inline-block;
     border-radius: 4px;
     padding: 7px;
-    min-width: 140px;
+    min-width: 200px;
 
     color: var(--hero-text-color);
     background-color: var(--accent-text-color);
@@ -103,7 +106,7 @@
     border: transparent;
 
     font-weight: 700;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;

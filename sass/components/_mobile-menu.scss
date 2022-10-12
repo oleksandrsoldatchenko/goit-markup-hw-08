@@ -109,22 +109,30 @@
 
 
 .mobile-contacts__link--number {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 1.18;
-        letter-spacing: .02em;
-        color: #2196f3;
-    }
+  font-weight: 500;
+  color: #2196f3;
+  letter-spacing: .02em;
+
+  @media screen and (max-width: 479.9px) {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: .02em;
+  }
+
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 1.18;
+  }
 }
 
 .mobile-contacts__link--mail {
-    @media screen and (max-width: 767px) {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 1.17;
-        letter-spacing: .02em;
-    }
+  @media screen and (max-width: 767px) {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: .02em;
+  }
 }
 
 
